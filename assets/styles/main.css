@@ -1,0 +1,6 @@
+.jumbotron {
+  background-image: url("/tree.jpg");
+  height: 320px;
+  background-size: cover;
+  background-position: center -1220px;
+}
