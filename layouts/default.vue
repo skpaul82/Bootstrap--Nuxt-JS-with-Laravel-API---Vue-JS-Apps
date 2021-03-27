@@ -2,18 +2,22 @@
   <div>
     <Nav />
     <div class="jumbotron mb-3"></div>
-    <div class="container">
+    <main class="container">
       <Nuxt />
-    </div>
+    </main>
+    <Footer />
   </div>
 </template>
 
 
 <script>
-import Nav from '@/components/Nav'
+  import Nav from '@/components/Nav'
+  import Footer from '../components/Footer'
+
   export default {
     components: {
-      Nav
+      Nav,
+      Footer
     }
   }
 </script>
