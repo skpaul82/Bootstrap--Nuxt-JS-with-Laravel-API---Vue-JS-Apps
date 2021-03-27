@@ -1,43 +1,72 @@
 <template>
-  <div>
-    <h1>Contact</h1>
-    <div class="col-xs-12 col-6 offset-md-3">
-      <form>
-
-      <div class="mb-3">
-        <input type="text" v-model="name" class="form-control" placeholder="Name">
-      </div>
-      <div class="mb-3">
-        <input type="email" v-model="email" class="form-control" placeholder="Email">
-      </div>
-      <div class="mb-3">
-        <input type="tel" v-model="phone" class="form-control" placeholder="Pnone Number">
-      </div>
-      <div class="mb-3 text-center">
-        <button @click="submitContact" class="btn btn-primary">Submit</button>
-      </div>
-      </form>
+    <div>
+        <h1>Contact</h1>
+        <div class="col-xs-12 col-6 offset-md-3">
+            <form>
+                <div class="mb-3">
+                    <input
+                        type="text"
+                        v-model="name"
+                        class="form-control"
+                        placeholder="Name"
+                    />
+                </div>
+                <div class="mb-3">
+                    <input
+                        type="email"
+                        v-model="email"
+                        class="form-control"
+                        placeholder="Email"
+                    />
+                </div>
+                <div class="mb-3">
+                    <input
+                        type="tel"
+                        v-model="phone"
+                        class="form-control"
+                        placeholder="Pnone Number"
+                    />
+                </div>
+                <div class="mb-3">
+                    <no-ssr>
+                        <v-select
+                            v-model="selected"
+                            placehlder="Select Category"
+                            :options="[
+                                'Website/Ecommerce Design and Development',
+                                'Custom Application Development',
+                                'Web/Mobile App Consultency'
+                            ]"
+                        ></v-select>
+                    </no-ssr>
+                </div>
+                <div class="mb-3 text-center">
+                    <button @click="submitContact" class="btn btn-primary">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </div>
     </div>
-
-  </div>
 </template>
 
 <script>
-  export default{
+export default {
     data() {
-      return {
-        name: "",
-        email: "",
-        phone: ""
-      }
+        return {
+            name: "",
+            email: "",
+            phone: "",
+            selected: ""
+        };
     },
 
-    methods:{
-      submitContact(){
-        event.preventDefault();
-        //
-        console.log(this.email);
-      }
+    methods: {
+        submitContact() {
+            event.preventDefault();
+            //
+            console.log(this.email);
+        }
     }
-  }
+};
 </script>
