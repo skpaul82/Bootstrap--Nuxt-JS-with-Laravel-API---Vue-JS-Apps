@@ -1,6 +1,6 @@
 # learning
 
-Bootstrap Static website with Nuxt JS is a prototype website template for a quick start in Nuxt JS
+Bootstrap Project for a quick start in Nuxt JS with Laravel API-Vue JS Apps
 
 ## Build Setup
 
@@ -20,3 +20,5 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
+Develop with LOVE by [Sanjoy K. Paul](//SanjoyPaul.com)
