@@ -1,6 +1,14 @@
 .jumbotron {
-  background-image: url("/tree.jpg");
-  height: 320px;
+  background: url("/tree.jpg") no-repeat;
+  height: 310px;
   background-size: cover;
-  background-position: center -810px;
+  background-position: center -372px;
+}
+/* @media (min-width: 1020px and max-width:2328px) { */
+@media (min-width: 1398px) {
+  .jumbotron {
+    height: 360px;
+    background-attachment: fixed;
+    background-position: center -600px;
+  }
 }
