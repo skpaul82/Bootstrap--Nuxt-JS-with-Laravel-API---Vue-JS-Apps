@@ -1,5 +1,7 @@
 # learning
 
+Bootstrap Static website with Nuxt JS is a prototype website template for a quick start in Nuxt JS
+
 ## Build Setup
 
 ```bash
