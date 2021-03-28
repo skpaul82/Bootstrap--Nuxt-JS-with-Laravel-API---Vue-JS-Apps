@@ -1,8 +1,8 @@
 <template>
     <div>
         <Nav />
-        <div class="jumbotron mb-3"></div>
-        <main class="container">
+        <div class="jumbotron"></div>
+        <main class="container py-5">
             <Nuxt />
         </main>
         <Footer />

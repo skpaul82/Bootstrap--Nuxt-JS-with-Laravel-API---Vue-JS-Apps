@@ -8,7 +8,7 @@
                 v-for="post in posts"
                 :key="post.id"
                 :post="post"
-                class="col-md-4"
+                class="col-xs-12 col-md-4"
             />
         </div>
     </div>

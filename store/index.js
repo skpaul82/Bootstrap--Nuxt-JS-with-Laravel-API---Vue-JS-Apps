@@ -2,13 +2,18 @@ import axios from "axios";
 
 // create a store
 export const state = () => ({
-    posts: {}
+    posts: {},
+    photos: {}
 });
 
 // getters
 export const getters = {
     posts(state) {
         return state.posts;
+    },
+
+    photos(state) {
+        return state.photos;
     }
 };
 
@@ -16,6 +21,10 @@ export const getters = {
 export const mutations = {
     SET_POSTS(state, posts) {
         state.posts = posts;
+    },
+
+    SET_PHOTOS(state, photos) {
+        state.photos = photos;
     }
 };
 
@@ -31,5 +40,9 @@ export const actions = {
 
     setPosts({ commit }, posts) {
         commit("SET_POSTS", posts);
+    },
+
+    setPhotos({ commit }, photos) {
+        commit("SET_PHOTOS", photos);
     }
 };

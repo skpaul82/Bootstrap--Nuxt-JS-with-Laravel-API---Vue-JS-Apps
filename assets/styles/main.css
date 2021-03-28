@@ -2,7 +2,8 @@
     background: url("/tree.jpg") no-repeat;
     height: 310px;
     background-size: cover;
-    background-position: center -372px;
+    background-attachment: fixed;
+    background-position: center -292px;
 }
 
 /* transition */
