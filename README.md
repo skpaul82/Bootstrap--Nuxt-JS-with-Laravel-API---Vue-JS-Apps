@@ -21,4 +21,6 @@ $ npm run generate
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
 
+Demo: [https://static-nuxtjs-website-template.web.app](https://static-nuxtjs-website-template.web.app)
+
 Develop with LOVE by [Sanjoy K. Paul](//SanjoyPaul.com)
